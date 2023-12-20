@@ -66,3 +66,6 @@ node_modules/
 .env
 /functions/venv/
 /firestore-key.json
+
+# IntelliJ
+.idea/

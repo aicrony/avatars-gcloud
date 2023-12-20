@@ -10,7 +10,6 @@ from dotenv import load_dotenv
 
 # ----------- EMULATOR DATABASE ----------- #
 from emulator.create_emulator_client import create_firestore_client
-
 load_dotenv()
 db = create_firestore_client(os.getenv('FIRESTORE_EMULATOR_HOST'))
 
@@ -88,4 +87,3 @@ def list_users():
         return 'An error occurred while processing the request', 500
 
 
-list_users()
